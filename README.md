@@ -1,2 +1,3 @@
-# EvenBetterBazaar
- Welcome to Funland
+# Example Emote Plugin
+
+Bottom Text
