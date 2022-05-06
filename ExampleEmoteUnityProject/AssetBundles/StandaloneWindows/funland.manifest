@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3532791129
+CRC: 1590638969
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d646977b4f9a79037d0fab07bebeb1cb
+    Hash: 0ef39fbbb7ccf9c7292b9bbe39c2a900
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e615bae142155a943f66a76fe66091e2
+    Hash: 02117a63532196252d183e5ec7a48817
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,7 +25,11 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
 - Class: 64
+  Script: {instanceID: 0}
+- Class: 65
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
@@ -35,8 +39,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
+- Class: 146
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Cube.prefab
 - Assets/funlandtest2.prefab
+- Assets/bussy/vengaBussySit.anim
 - Assets/funlandminecart.prefab
+- Assets/bussy/vengabus14.prefab
 Dependencies: []

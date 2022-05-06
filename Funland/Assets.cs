@@ -200,9 +200,9 @@ namespace ExamplePlugin
 
                 assetName = path[1].ToLower();
             }
-            if (assetName.StartsWith("assets/"))
+            if (assetName.ToLower().StartsWith("assets/"))
                 assetName = assetName.Remove(0, "assets/".Length);
-            int index = AssetIndices[assetName];
+            int index = AssetIndices[assetName.ToLower()];
 
             T asset = AssetBundles[index].LoadAsset<T>($"assets/{assetName}");
 
