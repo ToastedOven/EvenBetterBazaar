@@ -62,12 +62,12 @@ StyleCopReport.xml
 *_p.c
 *_i.h
 *.ilk
-*.meta
 *.obj
 *.iobj
 *.pch
 *.pdb
 *.ipdb
+*.meta
 *.pgc
 *.pgd
 *.rsp
@@ -328,3 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+!ExampleEmoteUnityProject/**/*.meta
