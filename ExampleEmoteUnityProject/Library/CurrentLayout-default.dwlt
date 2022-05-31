@@ -45,7 +45,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &3
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 674
     height: 535
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 127
+  controlID: 58
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -209,10 +209,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 75
+  controlID: 219
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,12 +232,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1477
+    width: 1455
     height: 947
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 76
+  controlID: 192
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,12 +257,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1477
-    height: 635
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 1455
+    height: 640
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 77
+  controlID: 193
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,10 +280,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 432
-    height: 635
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 416
+    height: 640
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -304,10 +304,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 432
+    x: 416
     y: 0
-    width: 1045
-    height: 635
+    width: 1039
+    height: 640
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -318,7 +318,7 @@ MonoBehaviour:
   - {fileID: 22}
   - {fileID: 23}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,9 +335,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 635
-    width: 1477
-    height: 312
+    y: 640
+    width: 1455
+    height: 307
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 24}
@@ -361,9 +361,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1477
+    x: 1455
     y: 0
-    width: 443
+    width: 465
     height: 947
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -397,7 +397,7 @@ MonoBehaviour:
     width: 674
     height: 514
   m_ViewDataDictionary: {fileID: 0}
-  m_Mode: 0
+  m_Mode: 1
   m_DataSourceIndex: 0
   m_ManageTab:
     m_BundleTreeState:
@@ -424,8 +424,8 @@ MonoBehaviour:
       m_SearchString: 
     m_AssetListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 71b770f3
-      m_LastClickedID: -210716815
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993dc2d6999dc2d6999dc2d6999dc2d6999c27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dc08aa65f0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+      m_ExpandedIDs: a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993a8aa2993dc2d6999dc2d6999dc2d6999dc2d6999c27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dcc27223dc08aa65f0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -534,9 +534,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1477
+    x: 1455
     y: 73
-    width: 442
+    width: 464
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -550,7 +550,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1440
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -574,15 +574,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 431
-    height: 614
+    width: 415
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 695}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8e81ffff
+      m_ExpandedIDs: 5a03f5ff280c0300a20c03003c0d03006a0d0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -627,10 +627,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 432
+    x: 416
     y: 73
-    width: 1043
-    height: 614
+    width: 1037
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 96b49220efd82e54b86b464deafbdfef
@@ -642,9 +642,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.9533958, y: -8.443781, z: 0.50093555}
+    m_Target: {x: -39.305096, y: -0.9802382, z: 33.672207}
     speed: 2
-    m_Value: {x: 3.9533958, y: -8.443781, z: 0.50093555}
+    m_Value: {x: -39.305096, y: -0.9802382, z: 33.672207}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -690,20 +690,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.073675, y: -0.9254692, z: 0.24124661, w: 0.2826328}
+    m_Target: {x: 0.00512109, y: 0.52105176, z: 0.0031266296, w: -0.85350454}
     speed: 2
-    m_Value: {x: 0.14235988, y: -0.7102156, z: 0.150266, w: 0.6728651}
+    m_Value: {x: 0.0051163924, y: 0.52233124, z: 0.0031343065, w: -0.8527217}
   m_Size:
-    m_Target: 36.33581
+    m_Target: 1.8608766
     speed: 2
-    m_Value: 34.77111
+    m_Value: 1.8608766
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.9
-    m_SpeedNormalized: 0.94000006
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -742,10 +742,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 432
+    x: 416
     y: 73
-    width: 1043
-    height: 614
+    width: 1037
+    height: 619
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1043, y: 587}
+  m_TargetSize: {x: 1037, y: 583}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -770,10 +770,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -521.5
-    m_HBaseRangeMax: 521.5
-    m_VBaseRangeMin: -293.5
-    m_VBaseRangeMax: 293.5
+    m_HBaseRangeMin: -518.5
+    m_HBaseRangeMax: 518.5
+    m_VBaseRangeMin: -291.5
+    m_VBaseRangeMax: 291.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -791,23 +791,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1043
-      height: 593
+      width: 1037
+      height: 598
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 521.5, y: 296.5}
+    m_Translation: {x: 518.5, y: 299}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -521.5
-      y: -296.5
-      width: 1043
-      height: 593
+      x: -518.5
+      y: -299
+      width: 1037
+      height: 598
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1043, y: 614}
+  m_LastWindowPixelSize: {x: 1037, y: 619}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -954,9 +954,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 708
-    width: 1476
-    height: 291
+    y: 713
+    width: 1454
+    height: 286
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -971,20 +971,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/sign
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets
+  - Assets/sign
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\dwelx\Documents\GitHub\EvenBetterBazaar\ExampleEmoteUnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68340000
-    m_LastClickedID: 13416
-    m_ExpandedIDs: 000000006834000000ca9a3b
+    m_SelectedIDs: 7a340000
+    m_LastClickedID: 13434
+    m_ExpandedIDs: 000000006234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1012,7 +1012,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000068340000
+    m_ExpandedIDs: 0000000062340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 708
-    width: 1448
-    height: 291
+    y: 713
+    width: 1476
+    height: 286
   m_ViewDataDictionary: {fileID: 0}

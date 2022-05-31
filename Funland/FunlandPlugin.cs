@@ -36,11 +36,11 @@ namespace ExamplePlugin
         public void Awake()
         {
             Assets.PopulateAssets();
-            //Assets.AddSoundBank("caramelldeeznuts.bnk");
             Assets.LoadSoundBanks();
             CustomEmotesAPI.AddNonAnimatingEmote("SpawnFunLand");
-            CustomEmotesAPI.AddNonAnimatingEmote("SpawnTestCube");
+            CustomEmotesAPI.BlackListEmote("SpawnFunLand");
             CustomEmotesAPI.AddNonAnimatingEmote("SpawnBus");
+            CustomEmotesAPI.BlackListEmote("SpawnBus");
             funLandInt = CustomEmotesAPI.RegisterWorldProp(Assets.Load<GameObject>($"assets/funlandtest2.prefab"), new JoinSpot[] { new JoinSpot("LeftSpot", new Vector3(12.539f, -2.088f, 2.62f), new Vector3(90, 0, 0), Vector3.one), new JoinSpot("RightSpot", new Vector3(12.539f, -5.235f, 2.62f), new Vector3(90, 0, 0), Vector3.one) });
             GameObject g = Assets.Load<GameObject>($"Assets/bussy/vengabus14.prefab");
             busInt = CustomEmotesAPI.RegisterWorldProp(g, new JoinSpot[] { busDoor });
@@ -50,6 +50,37 @@ namespace ExamplePlugin
             CustomEmotesAPI.AddCustomAnimation(Assets.Load<AnimationClip>($"Assets/bussy/vengaBussySit.anim"), true, visible: false);
             NetworkingAPI.RegisterMessageType<SyncBusToServer>();
             NetworkingAPI.RegisterMessageType<SyncBusToClient>();
+            g = Assets.Load<GameObject>($"assets/sign/newsign 1.prefab");
+            foreach (var item in g.GetComponentsInChildren<Renderer>())
+            {
+                item.material.shader = defaultShader;
+            }
+            RopeController controller = g.transform.Find("RopeController").gameObject.AddComponent<RopeController>();
+            controller.anchorPoint = g.transform.Find("Capsule").gameObject;
+            controller.attachPoint = g.transform.Find("funlandsign").Find("Point1").gameObject;
+            controller.ropeSegmentPrefab = Assets.Load<GameObject>($"assets/sign/ropesegment.prefab");
+
+            controller = g.transform.Find("RopeController (1)").gameObject.AddComponent<RopeController>();
+            controller.anchorPoint = g.transform.Find("Capsule (1)").gameObject;
+            controller.attachPoint = g.transform.Find("funlandsign").Find("Point2").gameObject;
+            controller.ropeSegmentPrefab = Assets.Load<GameObject>($"assets/sign/ropesegment.prefab");
+            On.RoR2.SceneCatalog.OnActiveSceneChanged += (orig, self, newScene) =>
+            {
+                orig(self, newScene);
+                if (newScene.name == "bazaar")
+                {
+                    GameObject g = Assets.Load<GameObject>($"assets/terrain/bazaarpath.prefab");
+                    g.GetComponentInChildren<Renderer>().material.shader = defaultShader;
+                    GameObject.Instantiate(g);
+                    g = Assets.Load<GameObject>($"assets/terrain/bazaarwalls.prefab");
+                    GameObject.Instantiate(g);
+                    GameObject wall = GameObject.Find("CaveMeshMain");
+                    Object.DestroyImmediate(wall.GetComponent<MeshCollider>());
+                    wall.GetComponent<MeshFilter>().mesh = Assets.Load<Mesh>($"assets/terrain/cavemeshmain.mesh");
+                    g = Assets.Load<GameObject>($"assets/sign/newsign 1.prefab");
+                    GameObject.Instantiate(g);
+                }
+            };
         }
 
         private void CustomEmotesAPI_emoteSpotJoined_Prop(GameObject emoteSpot, BoneMapper joiner, BoneMapper host)
@@ -92,15 +123,17 @@ namespace ExamplePlugin
 
         private void CustomEmotesAPI_animChanged(string newAnimation, BoneMapper mapper)
         {
-            if (newAnimation == "SpawnFunLand")
+            if (newAnimation == "SpawnFunLand" && NetworkServer.active)
             {
                 if (funland)
                 {
                     GameObject.Destroy(funland);
                 }
                 funland = CustomEmotesAPI.SpawnWorldProp(funLandInt);
+                funland.layer = 11;
                 funland.transform.position = mapper.transform.parent.position + new Vector3(33, 0, 0);
                 funland.GetComponent<MeshRenderer>().material.shader = defaultShader;
+                NetworkServer.Spawn(funland);
             }
             if (newAnimation == "SpawnTestCube")
             {
@@ -124,6 +157,7 @@ namespace ExamplePlugin
                     vengaBus.transform.SetParent(mapper.transform.parent);
                     vengaBus.transform.localPosition = new Vector3(0, 0, 7);
                     vengaBus.transform.SetParent(null);
+                    vengaBus.layer = 11;
                     NetworkServer.Spawn(vengaBus);
                 }
             }
