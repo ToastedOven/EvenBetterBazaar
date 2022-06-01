@@ -11,6 +11,7 @@ using RoR2;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Animations;
 using UnityEngine.Networking;
 
 namespace ExamplePlugin
@@ -64,6 +65,10 @@ namespace ExamplePlugin
             controller.anchorPoint = g.transform.Find("Capsule (1)").gameObject;
             controller.attachPoint = g.transform.Find("funlandsign").Find("Point2").gameObject;
             controller.ropeSegmentPrefab = Assets.Load<GameObject>($"assets/sign/ropesegment.prefab");
+
+            g = Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab").transform.Find("GameObject").Find("Base").Find("AimChecker").gameObject;
+            AngleLock a = g.AddComponent<AngleLock>();
+            a.aimConstraint = g.transform.parent.Find("Lamp").GetComponent<AimConstraint>();
             On.RoR2.SceneCatalog.OnActiveSceneChanged += (orig, self, newScene) =>
             {
                 orig(self, newScene);
@@ -77,8 +82,21 @@ namespace ExamplePlugin
                     GameObject wall = GameObject.Find("CaveMeshMain");
                     Object.DestroyImmediate(wall.GetComponent<MeshCollider>());
                     wall.GetComponent<MeshFilter>().mesh = Assets.Load<Mesh>($"assets/terrain/cavemeshmain.mesh");
-                    g = Assets.Load<GameObject>($"assets/sign/newsign 1.prefab");
-                    GameObject.Instantiate(g);
+                    var sign = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/newsign 1.prefab"));
+                    sign.transform.Find("Capsule").gameObject.AddComponent<RopeMoverButNotActuallyImJustPuttingThisHereToAnnoyRune>();
+
+                    g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
+                    g.transform.position = new Vector3(-38, -21.2f, 29);
+                    g.transform.localEulerAngles = new Vector3(30.00002f, 330, -1.97170606f);
+                    Transform t = g.transform.Find("LampAim");
+                    t.parent = sign.transform.Find("funlandsign");
+                    t.transform.localPosition = Vector3.zero;
+
+                    g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
+                    g.transform.position = new Vector3(-22.2f, -15f, 40.3f);
+                    t = g.transform.Find("LampAim");
+                    t.parent = sign.transform.Find("funlandsign");
+                    t.transform.localPosition = Vector3.zero;
                 }
             };
         }

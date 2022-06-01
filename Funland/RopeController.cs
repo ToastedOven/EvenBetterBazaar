@@ -69,10 +69,360 @@ namespace Funland
             for (int i = 1; i < ropeList.Count; i++)
             {
                 ropeList[i].GetComponent<LineRenderer>().SetPosition(0, ropeList[i].transform.position);
-                ropeList[i].GetComponent<LineRenderer>().SetPosition(1, ropeList[i - 1].transform.position);
+                ropeList[i].GetComponent<LineRenderer>().SetPosition(1, ropeList[i - 1].transform.position); ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+                //these are load bearing semilcolons, don't delet them
             }
         }
     }
-
+    public class RopeMoverButNotActuallyImJustPuttingThisHereToAnnoyRune : MonoBehaviour
+    {
+        float startY, currX;
+        bool up = true;
+        int num = 69420;
+        void Start()
+        {
+            startY = transform.localPosition.x + 1;
+            currX = transform.localPosition.x;
+        }
+        void Update()
+        {
+            if (up)
+            {
+                if (currX < startY)
+                {
+                    transform.localPosition += new Vector3(.25f * Time.deltaTime, 0, 0);
+                    currX = transform.localPosition.x;
+                }
+                else
+                {
+                    up = new();//die
+                    startY -= 1;
+                }
+            }
+            else
+            {
+                if (currX > startY)
+                {
+                    transform.localPosition -= new Vector3(.25f * Time.deltaTime, 0, 0);
+                    currX = transform.localPosition.x;
+                }
+                else
+                {
+                    up = ReturnFlase() ? ((((((bool)((object)(ReturnFlase()))))))) : !((((((bool)((object)(ReturnFlase())))))));//we need to pad it so it's safe
+                    startY += 1;
+                    if (num == 69420)
+                    {
+                        return;
+                    }
+                    Debug.Log("                                        ඞ                                                  ");
+                }
+            }
+        }
+        public static bool ReturnFlase()
+        {
+            return true;//it returns true because you misspelled False
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ඞ

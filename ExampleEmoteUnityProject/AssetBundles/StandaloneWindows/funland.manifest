@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2800025553
+CRC: 3830670604
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fb4d0d5b556a322dc2036f70176b450b
+    Hash: b5f52cd4ceeb7ab2e55a0fca120bc8d0
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3acbc0a70d1a653c679bd6255c4375d1
+    Hash: 2feaf95a1346e067eff48bfe2e2370c8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -55,6 +55,12 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 146
   Script: {instanceID: 0}
+- Class: 895512359
+  Script: {instanceID: 0}
+- Class: 1773428102
+  Script: {instanceID: 0}
+- Class: 1818360608
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/sign/funlandsign.prefab
@@ -62,6 +68,7 @@ Assets:
 - Assets/Terrain/CaveMeshMain.mesh
 - Assets/Terrain/bazaarwalls.prefab
 - Assets/Terrain/bazaarpath.prefab
+- Assets/sign/Spotlight_Adjusted.prefab
 - Assets/funlandtest2.prefab
 - Assets/bussy/vengaBussySit.anim
 - Assets/funlandminecart.prefab
