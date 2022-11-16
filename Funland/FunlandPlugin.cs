@@ -2,6 +2,7 @@ using BepInEx;
 using BepInEx.Configuration;
 using EmotesAPI;
 using Funland;
+using Funland.EmoteSkeletonHanders;
 using R2API;
 using R2API.Networking;
 using R2API.Utils;
@@ -13,13 +14,16 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Animations;
 using UnityEngine.Networking;
+using System.Security;
+using System.Security.Permissions;
 
+[assembly: SecurityPermission( SecurityAction.RequestMinimum, SkipVerification = true )]
 namespace ExamplePlugin
 {
     [BepInDependency("com.weliveinasociety.CustomEmotesAPI")]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
-    [R2APISubmoduleDependency("SoundAPI", "PrefabAPI", "CommandHelper", "ResourcesAPI")]
+    [R2APISubmoduleDependency("SoundAPI", "PrefabAPI", "CommandHelper", "ResourcesAPI", "ItemAPI", "ItemDropAPI")]
     public class FunlandPlugin : BaseUnityPlugin
     {
         public const string PluginGUID = "com.weliveinasociety.evenbetterbazaar";
@@ -37,6 +41,7 @@ namespace ExamplePlugin
         public void Awake()
         {
             Assets.PopulateAssets();
+            Assets.AddSoundBank("Funland.bnk");
             Assets.LoadSoundBanks();
             CustomEmotesAPI.AddNonAnimatingEmote("SpawnFunLand");
             CustomEmotesAPI.BlackListEmote("SpawnFunLand");
@@ -74,31 +79,95 @@ namespace ExamplePlugin
                 orig(self, newScene);
                 if (newScene.name == "bazaar")
                 {
-                    GameObject g = Assets.Load<GameObject>($"assets/terrain/bazaarpath.prefab");
-                    g.GetComponentInChildren<Renderer>().material.shader = defaultShader;
-                    GameObject.Instantiate(g);
-                    g = Assets.Load<GameObject>($"assets/terrain/bazaarwalls.prefab");
-                    GameObject.Instantiate(g);
-                    GameObject wall = GameObject.Find("CaveMeshMain");
-                    Object.DestroyImmediate(wall.GetComponent<MeshCollider>());
-                    wall.GetComponent<MeshFilter>().mesh = Assets.Load<Mesh>($"assets/terrain/cavemeshmain.mesh");
-                    var sign = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/newsign 1.prefab"));
-                    sign.transform.Find("Capsule").gameObject.AddComponent<RopeMoverButNotActuallyImJustPuttingThisHereToAnnoyRune>();
 
-                    g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
-                    g.transform.position = new Vector3(-38, -21.2f, 29);
-                    g.transform.localEulerAngles = new Vector3(30.00002f, 330, -1.97170606f);
-                    Transform t = g.transform.Find("LampAim");
-                    t.parent = sign.transform.Find("funlandsign");
-                    t.transform.localPosition = Vector3.zero;
-
-                    g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
-                    g.transform.position = new Vector3(-22.2f, -15f, 40.3f);
-                    t = g.transform.Find("LampAim");
-                    t.parent = sign.transform.Find("funlandsign");
-                    t.transform.localPosition = Vector3.zero;
+                    var g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/terrain/testlayout.prefab"));
+                    var checker = g.transform.Find("EmoteSkeletonChecker").gameObject;
+                    checker.AddComponent<EmoteSkeletonChecker>();
+                    var giver = g.transform.Find("EmoteSkeletonGiver").gameObject;
+                    giver.AddComponent<EmoteSkeletonGiver>();
+                    CaveSetup();
+                    SignSetup();
                 }
             };
+            ItemTest();
+        }
+        internal struct ItemDesc
+        {
+            internal ItemDesc(string _name, string _description, string _lore, string _token, GameObject _pickupPrefab, Sprite _sprite, ItemTier _tier, bool _hidden, ItemTag[] _tags)
+            {
+                name = _name;
+                description = _description;
+                lore = _lore;
+                token = _token;
+                pickupPrefab = _pickupPrefab;
+                sprite = _sprite;
+                tier = _tier;
+                hidden = _hidden;
+                tags = _tags;
+            }
+            public string name;
+            public string description;
+            public string lore;
+            public string token;
+            public GameObject pickupPrefab;
+            public Sprite sprite;
+            public ItemTier tier;
+            public bool hidden;
+            public ItemTag[] tags;
+        }
+        void CreateCustomItem(ItemDesc itemDesc)
+        {
+            ItemDef newDef = ScriptableObject.CreateInstance<ItemDef>();
+            newDef.deprecatedTier = itemDesc.tier;
+            newDef.name = $"ITEM_{itemDesc.token}";
+            newDef.nameToken = $"ITEM_{itemDesc.token}_NAME";
+            newDef.pickupToken = $"ITEM_{itemDesc.token}_PICKUP";
+            newDef.descriptionToken = $"ITEM_{itemDesc.token}_DESCRIPTION";
+            newDef.loreToken = $"ITEM_{itemDesc.token}_LORE";
+            newDef.pickupModelPrefab = itemDesc.pickupPrefab;
+            newDef.pickupIconSprite = itemDesc.sprite;
+            newDef.hidden = itemDesc.hidden;
+            newDef.tags = itemDesc.tags;
+            newDef.canRemove = true;
+            CustomItem customItem = new CustomItem(newDef, new ItemDisplayRuleDict(new ItemDisplayRule[0]));
+            ItemAPI.Add(customItem);
+            LanguageAPI.Add(newDef.name, itemDesc.name);
+            LanguageAPI.Add(newDef.nameToken, itemDesc.name);
+            LanguageAPI.Add(newDef.pickupToken, itemDesc.name);
+            LanguageAPI.Add(newDef.descriptionToken, itemDesc.description);
+            LanguageAPI.Add(newDef.loreToken, itemDesc.lore);
+        }
+        void ItemTest()
+        {
+            CreateCustomItem(new ItemDesc("Funland Ticket", "A ticket to be spent at Funland and on Funland related items.", "Seemingly impossible to replicate except when it gets replicated.", "FUNLANDTICKET", Assets.Load<GameObject>($"assets/models/testitem.prefab"), Assets.Load<Sprite>($"assets/models/lays.png"), ItemTier.NoTier, false, new ItemTag[] { ItemTag.AIBlacklist }));
+        }
+        void CaveSetup()
+        {
+            GameObject g = Assets.Load<GameObject>($"assets/terrain/bazaarpath.prefab");
+            g.GetComponentInChildren<Renderer>().material.shader = defaultShader;
+            GameObject.Instantiate(g);
+            g = Assets.Load<GameObject>($"assets/terrain/bazaarwalls.prefab");
+            GameObject.Instantiate(g);
+            GameObject wall = GameObject.Find("CaveMeshMain");
+            Object.DestroyImmediate(wall.GetComponent<MeshCollider>());
+            wall.GetComponent<MeshFilter>().mesh = Assets.Load<Mesh>($"assets/terrain/cavemeshmain.mesh");
+        }
+        void SignSetup()
+        {
+            var sign = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/newsign 1.prefab"));
+            sign.transform.Find("Capsule").gameObject.AddComponent<RopeMoverButNotActuallyImJustPuttingThisHereToAnnoyRune>();
+            var g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
+            g.transform.position = new Vector3(-38, -21.2f, 29);
+            g.transform.localEulerAngles = new Vector3(30.00002f, 330, -1.97170606f);
+            Transform t = g.transform.Find("LampAim");
+            t.parent = sign.transform.Find("funlandsign");
+            t.transform.localPosition = Vector3.zero;
+
+            g = GameObject.Instantiate(Assets.Load<GameObject>($"assets/sign/Spotlight_Adjusted.prefab"));
+            g.transform.position = new Vector3(-22.2f, -15f, 40.3f);
+            t = g.transform.Find("LampAim");
+            t.parent = sign.transform.Find("funlandsign");
+            t.transform.localPosition = Vector3.zero;
         }
 
         private void CustomEmotesAPI_emoteSpotJoined_Prop(GameObject emoteSpot, BoneMapper joiner, BoneMapper host)

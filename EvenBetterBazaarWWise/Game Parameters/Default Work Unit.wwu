@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B9B49DB5-B444-4F03-B90E-9B6841AB2DD3}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{B9B49DB5-B444-4F03-B90E-9B6841AB2DD3}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Volume_Master" ID="{4D4A96B1-04A6-4116-9A9B-737D0E70243A}"/>
+				<GameParameter Name="Volume_SFX" ID="{14D42A40-44CB-421F-B229-8CB48FF4672C}"/>
+				<GameParameter Name="EscapeTimer" ID="{6C42312D-A238-4606-94C9-C16A9C545E95}"/>
+				<GameParameter Name="teleporterPlayerStatus" ID="{A5076FEC-55B2-4CFA-8092-AD45E5AAAC1D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="teleporterProximity" ID="{A5B24278-DC8F-4331-8897-EA2A022877BE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="teleporterDirection" ID="{ACB47F52-B20E-485C-8280-1BDD71D6E71D}"/>
+				<GameParameter Name="isInPortalRange" ID="{671EA2EE-3D80-4F27-A722-51BC1C71A80F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_MSX" ID="{A5620F3D-62DE-4C50-8F19-2F30609C9F96}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BossDead" ID="{A9F79CD3-1790-4D47-8B8B-EC21C05D9769}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RuneBadNoise" ID="{07BCA735-D5C3-41E5-BEF2-5EF657182887}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MainMenuMusic" ID="{0BE90CA5-CC31-4942-8F34-0269A5930999}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="LobbyActivated" ID="{2BECC961-B19F-4A7F-8CDA-D648AA19DD2E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Modded_MSX" ID="{818DD060-2C1F-4DB0-85C5-D565E3F70BF8}"/>
+				<GameParameter Name="CustomRunMusic" ID="{CD0307A3-EF43-4C82-8D86-3CB40CA49FA9}"/>
+				<GameParameter Name="BossMusicActive" ID="{536D4CEA-DFC8-4D25-BF52-98F26F08BA0D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Custom_Music" ID="{566FB048-C802-4137-91FC-AE52030AC604}"/>
+				<GameParameter Name="Modded_SFX" ID="{7CA81A96-34D5-475D-A546-90227D6A71C0}"/>
+				<GameParameter Name="MLGActive" ID="{49F2290D-FE11-4A51-BCC8-C24A3D0128C4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AirhornAudio" ID="{12F2C40B-7E4A-4A5E-9555-826A423F3376}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Emotes" ID="{B2F36488-6805-4B96-B114-A6FEF5867DC9}"/>
+				<GameParameter Name="MetalGear_Vocals" ID="{878E36B5-B936-4670-94C3-38D5302B391C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="People_In_Range" ID="{5494B6A0-596F-4F85-AF70-371EF87F2CD5}">
+					<PropertyList>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="CumMeter" ID="{2E542DA3-97A2-48A7-A2D3-A45507BC8CFD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AECBC1C8-58CD-4701-92FC-3734D3431070}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{AECBC1C8-58CD-4701-92FC-3734D3431070}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_NoEmoteSkeleton" ID="{20A31308-AD63-41C1-9CD5-5705CA0C562B}">
+					<ChildrenList>
+						<Action Name="" ID="{5426F65D-47EA-45A6-98C0-24161429BE7A}" ShortID="233893701">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Denied" ID="{8168DBBD-FB89-477C-AB2F-796FD0807B5F}" WorkUnitID="{02C96B47-E04B-48FB-91CA-4858BFAA824D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

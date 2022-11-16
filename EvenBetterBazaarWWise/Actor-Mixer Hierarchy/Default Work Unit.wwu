@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02C96B47-E04B-48FB-91CA-4858BFAA824D}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{02C96B47-E04B-48FB-91CA-4858BFAA824D}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Volume_SFX" ID="{9F0C6761-55FB-480C-9311-EAB437BA75A7}" ShortID="669551962">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{1F36FE39-22D0-45F0-B1BB-6D91ADBB170F}" ShortID="90492191">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_SFX" ID="{14D42A40-44CB-421F-B229-8CB48FF4672C}" WorkUnitID="{B9B49DB5-B444-4F03-B90E-9B6841AB2DD3}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{28B73D86-9046-4D12-8E16-9DA16355E228}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{883B9D78-586A-4C90-834B-0D56A86EA3D6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DC68A40-5EA1-4B57-83C2-BB54E989ED25}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Denied" ID="{8168DBBD-FB89-477C-AB2F-796FD0807B5F}" ShortID="620945016">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{883B9D78-586A-4C90-834B-0D56A86EA3D6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8DC68A40-5EA1-4B57-83C2-BB54E989ED25}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Denied" ID="{B1F7584C-170D-4EF6-852F-CEBDC9FA9E9B}">
+									<Language>SFX</Language>
+									<AudioFile>Denied.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1002342173"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Denied" ID="{B1F7584C-170D-4EF6-852F-CEBDC9FA9E9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

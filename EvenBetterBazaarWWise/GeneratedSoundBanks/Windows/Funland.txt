@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2855913268	Play_NoEmoteSkeleton			\Default Work Unit\Play_NoEmoteSkeleton	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1002342173	Denied	C:\Users\dwelx\Documents\GitHub\EvenBetterBazaar\EvenBetterBazaarWWise\.cache\Windows\SFX\Denied_CA430782.wem		\Actor-Mixer Hierarchy\Default Work Unit\Volume_SFX\Denied		4809
+

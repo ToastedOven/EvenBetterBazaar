@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3830670604
+CRC: 3776596693
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b5f52cd4ceeb7ab2e55a0fca120bc8d0
+    Hash: 2c681a1cb12353a7d09f1c6358a6be40
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2feaf95a1346e067eff48bfe2e2370c8
+    Hash: 9239c818a9677c3e6d386c7edc8de3e1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -55,6 +55,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 146
   Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
 - Class: 895512359
   Script: {instanceID: 0}
 - Class: 1773428102
@@ -67,6 +69,7 @@ Assets:
 - Assets/Cube.prefab
 - Assets/Terrain/CaveMeshMain.mesh
 - Assets/Terrain/bazaarwalls.prefab
+- Assets/Models/lays.png
 - Assets/Terrain/bazaarpath.prefab
 - Assets/sign/Spotlight_Adjusted.prefab
 - Assets/funlandtest2.prefab
@@ -76,4 +79,6 @@ Assets:
 - Assets/sign/NewSign.prefab
 - Assets/sign/RopeSegment.prefab
 - Assets/sign/NewSign 1.prefab
+- Assets/Models/TestItem.prefab
+- Assets/Terrain/testlayout.prefab
 Dependencies: []
